@@ -42,7 +42,7 @@ def _parse(source):
 		source = source.replace(key, replace)
 	source += "\nerr = 0\nkick_execute_list = []\n%s" % "\n".join(listv)
 	exec(source)
-	return mardis_execute_list
+	return kick_execute_list
 
 def isco(co):
 	return hasattr(co, 'co_code')
@@ -67,7 +67,7 @@ def view(xxx):
 def dis(filename, outfile, bysource=None, about=False):
 	if about:
 		print "# %s tools v%s" % (_name, version)
-		print "# Detail https://github.com/kapten-kaizo/mardis\n"
+		print "# Detail https://github.com/kickwinnerz"
 	source_code = view(filename)
 	if bysource:
 		source_code = bysource
